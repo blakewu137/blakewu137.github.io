@@ -1,4 +1,4 @@
-:root {
+ :root {
 --text: #000000;
 --background: #b1f0db;
 --primary: #fcf18e;
@@ -22,6 +22,8 @@ h3 {
     color: var(--primary);
     font-style: italic;
     text-decoration: underline dotted;
+     border: 1px solid rgb(119, 170, 25);
+     
 }
 
 p {
@@ -37,7 +39,18 @@ img {
     border: 4px solid var(--secondary);
     border-radius: 16px;
     background: var(--primary);
+    animation: rotate360 3s infinite linear;
 }
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 audio {
     background: var(--secondary)
