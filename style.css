@@ -1,72 +1,75 @@
  :root {
---text: #000000;
---background: #b1f0db;
---primary: #000000;
---secondary: #77a4f8;
---accent: #9893eb;
-}
+     --text: #000000;
+     --background: #b1f0db;
+     --primary: #000000;
+     --secondary: #77a4f8;
+     --accent: #9893eb;
+ }
 
-body {
-    color: var(--text);
-    background: var(--background);
-    font-family: "Epunda Slab";
-}
-h1,
-h2 {
-    font-size: 50px;
-    font-weight: 500;
-    text-decoration: yellow wavy underline;
-}
+ body {
+     color: var(--text);
+     background: var(--background);
+     font-family: "Epunda Slab";
+ }
 
-h3 {
-    color: var(--primary);
-    font-style: italic;
-    text-decoration: underline dotted;
+ h1,
+ h2 {
+     font-size: 50px;
+     font-weight: 500;
+     text-decoration: yellow wavy underline;
+ }
+
+ h3 {
+     color: var(--primary);
+     font-style: italic;
+     text-decoration: underline dotted;
      border: 1px solid rgb(119, 170, 25);
-     
-}
 
-p {
-    background: var(--accent)
-}
+ }
 
-li::marker {
-    color: var(--secondary)
-}
+ p {
+     background: var(--accent)
+ }
 
-img {
-    padding: 4px;
-    border: 4px solid var(--secondary);
-    border-radius: 16px;
-    background: var(--primary);
-    animation: rotate360 3s infinite linear;
-}
+ li::marker {
+     color: var(--secondary)
+ }
 
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ img {
+     padding: 4px;
+     border: 4px solid var(--secondary);
+     border-radius: 16px;
+     background: var(--primary);
+     animation: rotate360 3s infinite linear;
+ }
+
+ @keyframes rotate360 {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(360deg);
+     }
+ }
 
 
-audio {
-    background: var(--secondary)
-}
+ audio {
+     background: var(--secondary)
+ }
 
-nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     top: 0;
+     left: 0;
+     right: 0;
+ }
 
-nav > ul {
-    display: flex;
-    list-style-type: none;
-    gap: 40px;
-}
+ nav>ul {
+     display: flex;
+     list-style-type: none;
+     gap: 40px;
+ }
+
