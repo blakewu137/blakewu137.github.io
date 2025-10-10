@@ -27,9 +27,7 @@
 
  }
 
- p {
-     background: var(--accent)
- }
+ p {}
 
  li::marker {
      color: var(--secondary)
