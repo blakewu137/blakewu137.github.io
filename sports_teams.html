@@ -10,6 +10,32 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+   .glow-text {
+     animation-name: glow;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-timing-function: linear;
+ } 
+
+     @keyframes glow {
+     0% {
+         text-shadow: 0 0 5px red;
+         color: red
+     }
+
+     50% {
+         text-shadow: 0 0 5px green;
+         color: green
+     }
+
+     100% {
+         text-shadow: 0 0 5px blue;
+         color: blue
+     }
+    }
+</style>
 <body>
      <nav class="menu">
         <h1>
@@ -22,7 +48,7 @@
             <li class="menu"><a href="https://nikhilsanjeev29.github.io">Nikhil's page</a></li>
         </ul>
     </nav>
-    <h1>My Favorite Teams</h1>
-    <p>This page will contain my sports teams</p>
+    <h1 class="glow-text">My Favorite Teams</h1>
+    <h2>Chicago Bears</h2>
 </body>
 </html>
