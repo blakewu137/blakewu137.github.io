@@ -30,6 +30,21 @@
 
     <br><button style="background-color: #7805c4; color: rgb(230, 233, 73)"
             onclick="alert('cat')">Please click me</button>
+
+<p><strong>This page turns green when you hold the g key</strong></p>
+<script>
+  window.addEventListener("keydown", event => {
+    if (event.key == "g") {
+      document.body.style.background = "green";
+    }
+  });
+  window.addEventListener("keyup", event => {
+    if (event.key == "g") {
+      document.body.style.background = "";
+    }
+  });
+</script>
+            
     <h2>My Cats</h2>
     <h3>My Hobbies</h3>
     <h3>My Favorite Movies</h3>
