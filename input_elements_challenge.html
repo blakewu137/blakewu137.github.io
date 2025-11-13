@@ -84,18 +84,21 @@
             let name = nameInput.value;
             let age = ageInput.value;
             greetingOutput.innerText = "Hello " + name + ", you are " + age + " years old!"
-            // TODO: Display a message like "Hello NAME, you are AGE years old!"
-            // Challenge: If age < 13, show "You're just a kid!" instead.
+            if (age < 13){
+            greetingOutput.innerText = "You are just a kid."
+            }
         });
 
         // --- PART 2 ---
         const colorInput = document.getElementById("colorInput");
         const volumeInput = document.getElementById("volumeInput");
         const colorOutput = document.getElementById("colorOutput");
+        colorOutput.innerText = "Test content";
 
-        let button = colorInput.value;
-        let background = colorOutput.value;
-        backgroundColor = colorOutput 
+        colorInput.addEventListener("input"); {
+            colorOutput.style.background = colorInput.value
+        }
+        
         // TODO: Update the background color of colorOutput whenever the color input changes.
         // Challenge: Also display the hex code and volume value dynamically.
 
