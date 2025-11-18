@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Background Color:</h2>
+    <input id="color" type="color" value="#00AAFF">
+    <br>
+
+    <h2>Font:</h2>
+    <select id="fontSelector" onchange="changeFont()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+        <option value="cursive">Cursive</option>
+        <option value="cambria">Cambria</option>
+        <option value="wingdings">WingDings</option>
+        <option value="fantasy">Fantasy</option>
+    </select>
+
+    <h2>Font Color:</h2>
+    <input id="textcolorInput" type="color" value="#00AAFF">
+
+    <script>
+        const color = document.getElementById("color")
+
+        color.addEventListener("input", () => {
+            document.body.style.backgroundColor = color.value;
+        });
+
+        function changeFont() {
+        const fontSelector = document.getElementById("fontSelector");
+        document.body.style.fontFamily = fontSelector.value;
+        };
+
+        const textcolorInput= document.getElementById("textcolorInput")
+
+        textcolorInput.addEventListener("input", () => {
+            document.body.style.color = textcolorInput.value;
+        });
+        
+    </script>
+</body>
+</html>
