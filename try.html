@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h2>Background Color:</h2>
     <input id="color" type="color" value="#00AAFF">
     <br>
+    <br>
+    <button id="resetButton" onclick="resetBackground()">Reset</button>
 
     <h2>Font:</h2>
     <select id="fontSelector" onchange="changeFont()">
@@ -23,6 +32,21 @@
 
     <h2>Font Color:</h2>
     <input id="textcolorInput" type="color" value="#00AAFF">
+    <br>
+
+    <h2>Font Size:</h2>
+    <input type="radio" name="font-size" value="32px">
+    <label for="32px">32px</label>
+    <br>
+    <input type="radio" name="font-size" value="50px">
+    <label for="50px">50px</label>
+    <br>
+    <input type="radio" name="font-size" value="24px">
+    <label for="24px">24px</label>
+    <br>
+    <input type="radio" name="font-size" value="16px">
+    <label for="16px">16px</label>
+
 
     <script>
         const color = document.getElementById("color")
@@ -31,17 +55,32 @@
             document.body.style.backgroundColor = color.value;
         });
 
-        function changeFont() {
-        const fontSelector = document.getElementById("fontSelector");
-        document.body.style.fontFamily = fontSelector.value;
+        function resetBackground() {
+            document.body.style.backgroundColor = "#b1f0db";
         };
 
-        const textcolorInput= document.getElementById("textcolorInput")
+        function changeFont() {
+            const fontSelector = document.getElementById("fontSelector");
+            document.body.style.fontFamily = fontSelector.value;
+        };
+
+        const textcolorInput = document.getElementById("textcolorInput")
 
         textcolorInput.addEventListener("input", () => {
             document.body.style.color = textcolorInput.value;
         });
-        
+
+        const fontSizeRadioButtons = document.getElementsByName("font-size")
+
+        for (const radioButton of fontSizeRadioButtons) {
+            radioButton.addEventListener("input", () => {
+                const select = radioButton.value;
+                document.body.style.fontSize = select
+            });
+        }
+
+
     </script>
 </body>
+
 </html>
