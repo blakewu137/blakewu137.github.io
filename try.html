@@ -17,7 +17,7 @@
     <input id="color" type="color" value="#00AAFF">
     <br>
     <br>
-    <button id="resetButton" onclick="resetBackground()">Reset</button>
+    <button onclick="resetBackground()">Reset Background</button>
 
     <h2>Font:</h2>
     <select id="fontSelector" onchange="changeFont()">
@@ -29,10 +29,17 @@
         <option value="wingdings">WingDings</option>
         <option value="fantasy">Fantasy</option>
     </select>
+    <br>
+    <br>
+    <button onclick="resetFont()">Reset Font</button>
+
 
     <h2>Font Color:</h2>
     <input id="textcolorInput" type="color" value="#00AAFF">
     <br>
+    <br>
+    <button onclick="resetFontColor()">Reset Font Color</button>
+
 
     <h2>Font Size:</h2>
     <input type="radio" name="font-size" value="32px">
@@ -44,8 +51,8 @@
     <input type="radio" name="font-size" value="24px">
     <label for="24px">24px</label>
     <br>
-    <input type="radio" name="font-size" value="16px">
-    <label for="16px">16px</label>
+    <br>
+    <button onclick="resetFontSize()">Reset Font Size</button>
 
 
     <script>
@@ -55,8 +62,11 @@
             document.body.style.backgroundColor = color.value;
         });
 
+        const backgrounddefaultColor = "#00AAFF";
+
         function resetBackground() {
             document.body.style.backgroundColor = "#b1f0db";
+            color.value = backgrounddefaultColor;
         };
 
         function changeFont() {
@@ -64,11 +74,22 @@
             document.body.style.fontFamily = fontSelector.value;
         };
 
+        function resetFont() {
+            document.body.style.fontFamily = "Epunda Slab";
+        };
+
         const textcolorInput = document.getElementById("textcolorInput")
 
         textcolorInput.addEventListener("input", () => {
             document.body.style.color = textcolorInput.value;
         });
+
+        const textdefaultColor = "#00AAFF";
+
+        function resetFontColor() {
+            document.body.style.color = "#000000";
+            textcolorInput.value = textdefaultColor;
+        };
 
         const fontSizeRadioButtons = document.getElementsByName("font-size")
 
@@ -79,6 +100,13 @@
             });
         }
 
+        function resetFontSize() {
+            document.body.style.fontSize = "16px";
+            
+        for (const radioButton of fontSizeRadioButtons) {
+        radioButton.checked = false;
+
+        }};
 
     </script>
 </body>
