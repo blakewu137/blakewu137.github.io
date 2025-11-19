@@ -14,13 +14,16 @@
 
 <body>
     <h2>Background Color:</h2>
-    <input id="color" type="color" value="#00AAFF">
+    <label for="color">Choosen color: </label>
+    <input id="color" type="color" value="#b1f0db">
     <br>
     <br>
     <button onclick="resetBackground()">Reset Background</button>
 
     <h2>Font:</h2>
+    <label for="fontSelector">Choosen font: </label>
     <select id="fontSelector" onchange="changeFont()">
+        <option selected value="Epunda Slab">Epunda Slab (Defult)</option>
         <option value="Arial">Arial</option>
         <option value="Times New Roman">Times New Roman</option>
         <option value="Verdana">Verdana</option>
@@ -35,7 +38,8 @@
 
 
     <h2>Font Color:</h2>
-    <input id="textcolorInput" type="color" value="#00AAFF">
+    <label for="textcolorInput">Choosen color: </label>
+    <input id="textcolorInput" type="color" value="#000000">
     <br>
     <br>
     <button onclick="resetFontColor()">Reset Font Color</button>
@@ -62,7 +66,7 @@
             document.body.style.backgroundColor = color.value;
         });
 
-        const backgrounddefaultColor = "#00AAFF";
+        const backgrounddefaultColor = "#b1f0db";
 
         function resetBackground() {
             document.body.style.backgroundColor = "#b1f0db";
@@ -74,8 +78,12 @@
             document.body.style.fontFamily = fontSelector.value;
         };
 
+        const fontSelector = document.getElementById("fontSelector");
+        const defultFont = "Epunda Slab";
+
         function resetFont() {
             document.body.style.fontFamily = "Epunda Slab";
+            fontSelector.value = defultFont;
         };
 
         const textcolorInput = document.getElementById("textcolorInput")
@@ -84,7 +92,7 @@
             document.body.style.color = textcolorInput.value;
         });
 
-        const textdefaultColor = "#00AAFF";
+        const textdefaultColor = "#000000";
 
         function resetFontColor() {
             document.body.style.color = "#000000";
