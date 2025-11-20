@@ -58,6 +58,19 @@
     <br>
     <button onclick="resetFontSize()">Reset Font Size</button>
 
+    <h2>Font Weight:</h2>
+    <input type="radio" name="font-weight" value="bold">
+    <label for="bold">Bold</label>
+    <br>
+    <input type="radio" name="font-weight" value="lighter">
+    <label for="lighter">Lighter</label>
+    <br>
+    <input type="radio" name="font-weight" value="900">
+    <label for="bolder">Bolder</label>
+    <br>
+    <br>
+    <button onclick="resetFontWeight()">Reset Font Weight</button>
+
 
     <script>
         const color = document.getElementById("color")
@@ -104,7 +117,7 @@
         for (const radioButton of fontSizeRadioButtons) {
             radioButton.addEventListener("input", () => {
                 const select = radioButton.value;
-                document.body.style.fontSize = select
+                document.body.style.fontSize = select;
             });
         }
 
@@ -115,6 +128,25 @@
         radioButton.checked = false;
 
         }};
+
+        const fontWeightRadioButtons = document.getElementsByName("font-weight")
+
+        for (const weightradioButton of fontWeightRadioButtons) {
+            weightradioButton.addEventListener("input", () => {
+                const weightselect = weightradioButton.value;
+                document.body.style.fontWeight = weightselect;
+            });
+        }
+
+         function resetFontWeight() {
+            document.body.style.fontWeight = "normal";
+            
+        for (const weightradioButton of fontWeightRadioButtons) {
+        weightradioButton.checked = false;
+
+        }};
+
+
 
     </script>
 </body>
