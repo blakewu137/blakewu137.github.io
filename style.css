@@ -16,8 +16,7 @@
  h2 {
      font-size: 40px;
      font-weight: 500;
-     text-decoration: yellow wavy underline;
- }
+    }
 
  h3 {
      color: var(--primary);

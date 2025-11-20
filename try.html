@@ -17,18 +17,35 @@
             text-align: center;
         }
 
+        h1 {
+            font-size: 50px;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            border-color: blue;
+        }
+
+        h2 {
+            margin-top: 60px;
+        }
+
+
     </style>
 
 
 </head>
 
 <body>
+
+    <h1>Theme Switcher</h1>
+
     <h2>Background Color:</h2>
     <label for="color">Chosen color: </label>
     <input id="color" type="color" value="#b1f0db">
     <br>
     <br>
     <button onclick="resetBackground()">Reset Background</button>
+    
+    <br>
 
     <h2>Font:</h2>
     <label for="fontSelector">Choosen font: </label>
@@ -46,6 +63,7 @@
     <br>
     <button onclick="resetFont()">Reset Font</button>
 
+    <br>
 
     <h2>Font Color:</h2>
     <label for="textcolorInput">Chosen color: </label>
@@ -54,6 +72,7 @@
     <br>
     <button onclick="resetFontColor()">Reset Font Color</button>
 
+    <br>
 
     <h2>Font Size:</h2>
     <input type="radio" name="font-size" value="32px">
@@ -67,6 +86,8 @@
     <br>
     <br>
     <button onclick="resetFontSize()">Reset Font Size</button>
+
+    <br>
 
     <h2>Font Weight:</h2>
     <input type="radio" name="font-weight" value="bold">
