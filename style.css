@@ -13,7 +13,7 @@
  }
 
  h1{}
- 
+
  h2 {
      font-size: 40px;
      font-weight: 500;
@@ -71,29 +71,4 @@
      list-style-type: none;
      gap: 40px;
  }
-
- .container {
-    text-align: center;
-    background: white;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
-    border-radius: 10px;
- }
-
- #increment-btn {
-    text-align: center;
-    background: #2C2891;
-}
-
-#save-btn {
-    text-align: center;
-    background: #1C7947;
-}
-
-#save-el {
-    text-align: center;
-    font-weight: bold;
-}
-
 
