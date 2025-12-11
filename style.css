@@ -12,10 +12,12 @@
      font-family: "Epunda Slab";
  }
 
- h1,
+ h1{}
+ 
  h2 {
      font-size: 40px;
      font-weight: 500;
+     color: #9893eb;
     }
 
  h3 {
@@ -29,7 +31,7 @@
  p,
 
  li::marker {
-     color: var(--secondary)
+     color: var(--primary)
  }
 
  img {
