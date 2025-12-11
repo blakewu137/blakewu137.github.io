@@ -28,34 +28,31 @@
     </nav>
 
     <p>The domestic cat (Felis catus) is a small, agile, carnivorous mammal that holds the distinction of being the only domesticated species in the Felidae family. Though highly valued worldwide for companionship and pest control, cats are obligate carnivores and retain many of the physical and behavioral traits of their wild ancestors, such as the African wildcat. Key features include a flexible body, quick reflexes, sharp retractable claws, and highly developed senses, particularly keen night vision and hearing. Cats are solitary hunters but socially interact with humans and sometimes form loose colonies of related females in feral conditions. Their communication is a complex mix of vocalizations—including meowing, purring, and hissing—and intricate body language, all of which contribute to their unique and often endearing relationship with people.</p>
+    
+    <br><img src="images.webp" alt="A Picture of a Cat" width="350" height="250">
+    <img src="imagecat.jpg" alt="Another cat" width="400" height="250">
 
-    <br><button  id="balon" style="background-color: #7805c4; color: rgb(230, 233, 73)"
-            onclick="alert('cat')">Please click me</button>
+       <br><p id="balon">🐈</p>
+       <h3>Click arrows to change size</h3>
 
 <script>
   let ballonEl = document.getElementById("balon")
   let fontSize = 10;
   function handleKeyDown(event) {
     if (event.key == "ArrowDown") {
-      fontSize /= 1.1;
+      fontSize /= 1.5;
       ballonEl.style.fontSize = fontSize+"px";
       event.preventDefault();
     }
  
     if (event.key == "ArrowUp") {
-      fontSize *= 1.1;
+      fontSize *= 1.5;
       ballonEl.style.fontSize = fontSize+"px";
       event.preventDefault();
     }
   }
   window.addEventListener("keydown", handleKeyDown)
 </script>
-
-    <h2><strong>⬆️Watch⬆️Click Up and Down Arrows</strong></h2>
-    
-    <br><img src="images.webp" alt="A Picture of a Cat" width="350" height="250">
-    <img src="imagecat.jpg" alt="Another cat" width="400" height="250">
-    <br><audio controls src="better_nice.wav"></audio>
 </body>
 
 </html>
