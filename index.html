@@ -54,7 +54,15 @@
         <li>Water (the single most important nutrient)</li>
     </ul>
 
-    <br><a href="https://youtu.be/FDV2IhXmEM8">
+    <h4>What Color Would You Want Your Cat To Be:</h4>
+
+    <label for="catcolor">Chosen color: </label>
+    <input id="catcolor" type="color" value="#b1f0db">
+    <br>
+
+    <br>
+    <br>
+    <a href="https://youtu.be/FDV2IhXmEM8">
       <button style="background-color: rgb(175, 114, 232);">CLICK HERE FOR FUNNY CAT VIDEO!!!</button>
     </a>
     <br>
@@ -62,6 +70,13 @@
     <br><img src="images.webp" alt="A Picture of a Cat" width="350" height="250">
     <img src="imagecat.jpg" alt="Another cat" width="400" height="250">
 
+    <script>
+        const catcolor = document.getElementById("catcolor")
+
+        catcolor.addEventListener("input", () => {
+            document.body.style.backgroundColor = catcolor.value;
+        });
+    </script>
 </body>
 
 </html>
