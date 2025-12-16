@@ -1,4 +1,4 @@
- :root {
+:root {
      --text: #000000;
      --background: #b1f0db;
      --primary: #000000;
@@ -10,13 +10,19 @@
      color: var(--text);
      background: var(--background);
      font-family: "Epunda Slab";
+     text-align: center;
  }
 
  h1 {
     color:#000000;
+    font-size: 50px;
+    border: 2px dashed;
+    border-radius: 10px;
+    border-color: blue;
  }
 
  h2 {
+    margin-top: 60px;
      font-size: 40px;
      font-weight: 500;
      color: #e35656;
@@ -59,9 +65,5 @@
 
  .menubutton {
     border: #000000 2px solid;
-    background-color: #af72e8;
- }
-
- .videobutton{
     background-color: #af72e8;
  }
