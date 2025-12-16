@@ -12,7 +12,9 @@
      font-family: "Epunda Slab";
  }
 
- h1,
+ h1 {
+    color:#000000;
+ }
 
  h2 {
      font-size: 40px;
@@ -61,5 +63,9 @@
 
  .menubutton {
     border: #000000 2px solid;
+    background-color: #af72e8;
+ }
+
+ .videobutton{
     background-color: #af72e8;
  }
