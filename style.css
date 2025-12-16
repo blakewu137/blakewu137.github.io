@@ -12,13 +12,13 @@
      font-family: "Epunda Slab";
  }
 
- h1{}
+ h1,
 
  h2 {
      font-size: 40px;
      font-weight: 500;
      color: #e35656;
-    }
+ }
 
  h3 {
      color: var(--primary);
@@ -59,7 +59,7 @@
      gap: 40px;
  }
 
-.menubutton button{
+ .menubutton {
+    border: #000000 2px solid;
     background-color: #af72e8;
-
-}
+ }

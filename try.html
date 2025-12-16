@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-
         body {
             text-align: center;
         }
@@ -27,40 +26,23 @@
         h2 {
             margin-top: 60px;
         }
-        
     </style>
 
 
 </head>
 
 <body>
-  <nav class="menu">
+    <nav class="menu">
         <h1>
             CATS ARE BETTER THAN DOGS
         </h1>
         <ul>
-            <li class="menubutton"><a href="index.html">
-                <button>Home Page</button>
-            </a></li>
-
-             <li class="menubutton"><a href="breeds.html">
-                <button>Cat Breeds</button>
-            </a></li>
-
-            <li class="menubutton"><a href="cats.html">
-                <button>Why Cats are Better</button>
-            </a></li>
-            
-            <li class="menubutton"><a href="try.html">
-                <button>Theme Switcher</button>
-            </a></li>
-            
-            <li class="menubutton"><a href="https://nikhilsanjeev29.github.io">
-                <button>Nikhil's Page</button>
-
-            <li class="menubutton"><a href="https://kiwinguyen29.github.io">
-                <button>Kiwi's Page</button>
-            </a></li>
+            <li class="menubutton"><a href="index.html">Home Page</a></li>
+            <li class="menubutton"><a href="breeds.html">Cat Breeds</a></li>
+            <li class="menubutton"><a href="cats.html">Whay Cats Are Better</a></li>
+            <li class="menubutton"><a href="try.html">Theme Switcher</a></li>
+            <li class="menubutton"><a href="https://nikhilsanjeev29.github.io">Nikhil's Page</a></li>
+            <li class="menubutton"><a href="https://kiwinguyen29.github.io">Kiwi's Page</a></li>
         </ul>
     </nav>
 
@@ -72,7 +54,7 @@
     <br>
     <br>
     <button onclick="resetBackground()">Reset Background</button>
-    
+
     <br>
 
     <h2>Font:</h2>
@@ -185,10 +167,11 @@
 
         function resetFontSize() {
             document.body.style.fontSize = "16px";
-            
-        for (const radioButton of fontSizeRadioButtons) {
-        radioButton.checked = false;
-        }};
+
+            for (const radioButton of fontSizeRadioButtons) {
+                radioButton.checked = false;
+            }
+        };
 
         const fontWeightRadioButtons = document.getElementsByName("font-weight")
 
@@ -199,13 +182,15 @@
             });
         }
 
-         function resetFontWeight() {
+        function resetFontWeight() {
             document.body.style.fontWeight = "normal";
-            
-        for (const weightradioButton of fontWeightRadioButtons) {
-        weightradioButton.checked = false;
-        }};
+
+            for (const weightradioButton of fontWeightRadioButtons) {
+                weightradioButton.checked = false;
+            }
+        };
 
     </script>
 </body>
+
 </html>
